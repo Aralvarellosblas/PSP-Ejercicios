@@ -20,9 +20,7 @@ public class Hilo extends Thread implements Runnable{
 
             while(count<=2){
                 count++;
-
                 Hilo Hilo=new Hilo("Hilo "+count);
-
                 Hilo.start();
                 Hilo.join();
 
