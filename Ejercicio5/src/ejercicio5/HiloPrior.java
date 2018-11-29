@@ -1,20 +1,34 @@
 package ejercicio5;
 
-import static ejercicio5.Ejercicio5.count;
+import static ejercicio5.Ejercicio5.count2;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
+ * Este hilo pone a prueba las prioridades para ejecutar el hilo 2 antes que el
+ * hilo 1
+ *
  * @author Arturo
  */
 public class HiloPrior extends Thread{
 
+    /**
+     * Constructor del hilo de prioridades
+     *
+     * @param st
+     */
     public HiloPrior(String st){
         super(st);
-        count++;
+        count2++;//aunemta el contador para el nombre del hilo
 
     }
 
+    /**
+     * El metodo run comprueba el nombre del hilo para aplicar la prioridad
+     * mimina al hilo numero 1 y la maxima al hilo numero 2. Hace que los hilos
+     * muestren un mensaje y que muestren su prioridad para comprobar que esta
+     * ha cambiado
+     */
     @Override
     public void run(){
         if(getName().equals("HiloPrior 1")){
