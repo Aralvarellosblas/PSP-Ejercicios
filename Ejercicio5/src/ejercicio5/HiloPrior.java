@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 /**
  * Este hilo pone a prueba las prioridades para ejecutar el hilo 2 antes que el
- * hilo 1
+ * hilo 
  *
  * @author Arturo
  */
